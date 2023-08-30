@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspertoTech</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div id="titulos">
+        <h1 id="tituloPrincipal">Pegue gratis seu ebook PLR</h1>
+        <h2 id="subtitulo-principal">Aprenda agora a criar e vender seus proprios e-books</h2>
+    </div>
+
+    <img src="imagens/plr-ebook.png" alt="Imagem ilustrativa" id="img-plr">
+
+    <div id="formularioPedido">
+        <h2 id="subtitulo-formulario">Informe seus dados abaixo</h2>
+        <form>
+            <label for="nomeRemetente">Nome</label>
+            <div id="texto">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required>
+            </div>
+            <br>
+            <label for="sobrenomeRemetente">Sobrenome</label>
+            <div id="texto">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome aqui..." required>
+            </div>
+            <br>
+            <label for="emailRemetente">E-mail</label>
+            <div id="texto">
+                <input type="text" name="email" id="email" placeholder="Digite seu email aqui..." required>
+            </div>
+            <br>
+            <label for="selectRemetente">como ficou sabendo sobre <strong>PLR</strong>?</label>
+            <div>
+                <select name="sobre" id="sobrePLR">
+                    <option value="">Selecione...</option>
+                    <option value="">Facebook</option>
+                    <option value="">Whatsapp</option>
+                    <option value="">Amigos</option>
+                    <option value="">Familiares</option>
+                    <option value="">Trabalho</option>
+                    <option value="">E-mail</option>
+                    <option value="">Outros</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="whatsapp">Whatsapp</label>
+                <input type="tel" name="telefone" id="whatsapp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="(21)222-2222" required>
+            </div><br>
+
+            <label for="aceito">Deseja receber novidades do espertoTech?</label>
+            <div id="radio-itens">
+                <input type="radio" name="aceito" id="aceito" > Sim
+                <input type="radio" name="aceito" id="rejeito" > Não
+            </div><br>
+            <button type="submit" id="btn-confirmar">Quero Meu guia de PLR</button>
+        </form>
+    </div>
+</body>
+</html>
